@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f6f8fa;
+            color: #24292e;
+        }
+        h1 {
+            color: #0366d6;
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #586069;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        code {
+            background: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #d63384;
+        }
+        .command {
+            background: #1b1f23;
+            color: #00d26a;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin: 8px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .tip {
+            background: #fff8c5;
+            border-left: 4px solid #f0b429;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🐙 Learning GitHub</h1>
+    <p>Your beginner's guide to version control with Git & GitHub.</p>
+
+    <!-- Section 1: Key Concepts -->
+    <div class="card">
+        <h2>📌 Key Concepts</h2>
+        <ul>
+            <li><code>Repository (Repo)</code> – A folder that stores your project and its history.</li>
+            <li><code>Commit</code> – A saved snapshot of your changes.</li>
+            <li><code>Branch</code> – A separate line of development.</li>
+            <li><code>Merge</code> – Combining changes from one branch into another.</li>
+            <li><code>Pull Request (PR)</code> – A request to merge your changes into the main branch.</li>
+            <li><code>Clone</code> – Copying a remote repo to your local machine.</li>
+            <li><code>Fork</code> – Your personal copy of someone else's repo.</li>
+        </ul>
+    </div>
+
+    <!-- Section 2: Basic Git Commands -->
+    <div class="card">
+        <h2>⚙️ Basic Git Commands</h2>
+
+        <p><strong>Set up Git:</strong></p>
+        <div class="command">git config --global user.name "Your Name"</div>
+        <div class="command">git config --global user.email "you@example.com"</div>
+
+        <p><strong>Start a project:</strong></p>
+        <div class="command">git init</div>
+        <div class="command">git clone https://github.com/username/repo.git</div>
+
+        <p><strong>Track & save changes:</strong></p>
+        <div class="command">git status</div>
+        <div class="command">git add .</div>
+        <div class="command">git commit -m "Your commit message"</div>
+
+        <p><strong>Push & pull:</strong></p>
+        <div class="command">git push origin main</div>
+        <div class="command">git pull origin main</div>
+
+        <p><strong>Branching:</strong></p>
+        <div class="command">git branch new-feature</div>
+        <div class="command">git checkout new-feature</div>
+        <div class="command">git merge new-feature</div>
+    </div>
+
+    <!-- Section 3: GitHub Workflow -->
+    <div class="card">
+        <h2>🔄 Typical GitHub Workflow</h2>
+        <ol>
+            <li>Create or fork a repository</li>
+            <li>Clone it to your local machine</li>
+            <li>Create a new branch for your feature</li>
+            <li>Make changes and commit them</li>
+            <li>Push the branch to GitHub</li>
+            <li>Open a Pull Request</li>
+            <li>Review and merge the PR</li>
+        </ol>
+    </div>
+
+    <!-- Section 4: Tips -->
+    <div class="card">
+        <h2>💡 Tips for Beginners</h2>
+        <div class="tip">Always write clear commit messages — future you will thank you!</div>
+        <div class="tip">Use <code>.gitignore</code> to avoid pushing unnecessary files like <code>node_modules</code>.</div>
+        <div class="tip">Never push directly to the <code>main</code> branch — use branches and PRs.</div>
+        <div class="tip">Use <code>git status</code> often to see what's going on in your repo.</div>
+    </div>
+
+    <footer style="text-align:center; color:#888; margin-top: 40px;">
+        Happy coding! 🚀 | Learning GitHub one commit at a time
+    </footer>
+
+</body>
+</html>
