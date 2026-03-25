@@ -1,18 +1,12 @@
 {
-  "name": "my-node-app",
+  "name": "your-app",
   "version": "1.0.0",
-  "description": "A simple Node.js application",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node index.js",   
+    "test": "echo \"No tests yet\"",
+    "start": "node index.js"
   },
-  "author": "Your Name",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0"
+    ...
   }
 }
